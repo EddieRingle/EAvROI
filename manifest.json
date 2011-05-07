@@ -1,0 +1,28 @@
+{
+  "name": "EAv ROI Injector",
+  "version": "0.1",
+  "description": "A tiny extension that injects an investment's daily ROI into an EAv page.",
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*.empireavenue.com/*",
+        "http://empireavenue.com/*",
+        "https://*.empireavenue.com/*",
+        "https://empireavenue.com/*"
+      ],
+      "js": ["jquery.js", "eavroi.js"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "http://*.empireavenue.com/",
+    "http://empireavenue.com/",
+    "https://*.empireavenue.com/",
+    "https://empireavenue.com/"
+  ]
+}
