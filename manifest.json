@@ -1,6 +1,6 @@
 {
   "name": "EAv ROI Injector",
-  "version": "0.2",
+  "version": "0.2.2",
   "description": "A tiny extension that injects an investment's daily ROI into an EAv page.",
   "icons": {
     "16": "icon-16.png",
